@@ -1,4 +1,4 @@
-// Application constants
+
 export const LOCAL_STORAGE_OPTIONS_KEY = 'decisionMakerOptions';
 export const LOCAL_STORAGE_SOUND_KEY = 'decisionMakerSoundEnabled';
 export const DEFAULT_DURATION = 10;

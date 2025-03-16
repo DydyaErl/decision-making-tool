@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edafe861-e4ae-48f8-a733-1d8bcd2d77ae" name="Changes" comment="feat: add constants.ts,create-element.ts, local-storage.ts, router.ts , validation.ts">
-      <change afterPath="$PROJECT_DIR$/src/components/OptionsList/modal-windows.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/OptionsList/option.ts" afterDir="false" />
+    <list default="true" id="edafe861-e4ae-48f8-a733-1d8bcd2d77ae" name="Changes" comment="feat: add options-control.ts, options-list.ts, decision-picker.ts,wheel.ts">
+      <change afterPath="$PROJECT_DIR$/src/components/DecisionPicker/decision-picker.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DecisionPicker/wheel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/OptionsList/options-control.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/OptionsList/options-list.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OptionsList/ModalWindows.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OptionsList/Option.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DecisionPicker/DecisionPicker.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DecisionPicker/Wheel.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OptionsList/OptionsControl.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OptionsList/OptionsList.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741964851495</updated>
       <workItem from="1741964852666" duration="5136000" />
-      <workItem from="1742112819846" duration="5129000" />
+      <workItem from="1742112819846" duration="7447000" />
     </task>
     <task id="LOCAL-00001" summary="init: add project structure">
       <option name="closed" value="true" />
@@ -125,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742130840797</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: add modal-windows.ts, option.ts">
+      <option name="closed" value="true" />
+      <created>1742135121267</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742135121267</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +147,8 @@
     <MESSAGE value="init: add project structure" />
     <MESSAGE value="feat: add basic structure and types" />
     <MESSAGE value="feat: add constants.ts,create-element.ts, local-storage.ts, router.ts , validation.ts" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add constants.ts,create-element.ts, local-storage.ts, router.ts , validation.ts" />
+    <MESSAGE value="feat: add modal-windows.ts, option.ts" />
+    <MESSAGE value="feat: add options-control.ts, options-list.ts, decision-picker.ts,wheel.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add options-control.ts, options-list.ts, decision-picker.ts,wheel.ts" />
   </component>
 </project>

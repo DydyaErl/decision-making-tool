@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edafe861-e4ae-48f8-a733-1d8bcd2d77ae" name="Changes" comment="feat: add basic structure and types">
-      <change afterPath="$PROJECT_DIR$/src/utils/create-element.ts" afterDir="false" />
+    <list default="true" id="edafe861-e4ae-48f8-a733-1d8bcd2d77ae" name="Changes" comment="feat: add constants.ts,create-element.ts, local-storage.ts, router.ts , validation.ts">
+      <change afterPath="$PROJECT_DIR$/src/components/OptionsList/modal-windows.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/OptionsList/option.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/createElement.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/local-storage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/localStorage.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/router.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/validation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OptionsList/ModalWindows.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OptionsList/Option.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741964851495</updated>
       <workItem from="1741964852666" duration="5136000" />
-      <workItem from="1742112819846" duration="4056000" />
+      <workItem from="1742112819846" duration="5129000" />
     </task>
     <task id="LOCAL-00001" summary="init: add project structure">
       <option name="closed" value="true" />
@@ -119,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741977203247</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: add constants.ts,create-element.ts, local-storage.ts, router.ts , validation.ts">
+      <option name="closed" value="true" />
+      <created>1742130840797</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742130840797</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +134,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init: add project structure" />
     <MESSAGE value="feat: add basic structure and types" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add basic structure and types" />
+    <MESSAGE value="feat: add constants.ts,create-element.ts, local-storage.ts, router.ts , validation.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add constants.ts,create-element.ts, local-storage.ts, router.ts , validation.ts" />
   </component>
 </project>

@@ -1,5 +1,10 @@
 import type { Routes } from './constants';
 
+export type Component = {
+  render(): HTMLElement;
+  destroy?(): void;
+};
+
 export type RouterState = {
   route: (typeof Routes)[keyof typeof Routes];
 };
@@ -16,4 +21,11 @@ export type ValidOption = {
   weight: number;
 };
 
-export class ElementOptions {}
+export type ElementOptions = {
+  tagName: keyof HTMLElementTagNameMap;
+  className?: string | string[];
+  textContent?: string;
+  attributes?: Record<string, string>;
+  children?: HTMLElement[];
+  listeners?: Record<string, EventListener>;
+};

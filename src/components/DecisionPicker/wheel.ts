@@ -120,7 +120,7 @@ export class Wheel {
         this.restoreOriginalDOM();
     }
 
-   te initializeOptions(optionsList: ValidOption[]): void {
+   private initializeOptions(optionsList: ValidOption[]): void {
         // Add colors and shuffle options
         this.options = optionsList.map(option => ({
             ...option,

@@ -5,7 +5,7 @@ type RouteValue = (typeof Routes)[keyof typeof Routes];
 
 function isRouteValue(value: unknown): value is RouteValue {
     return typeof value === 'string' &&
-        (value === '/options-list' || value === '/error');
+        Object.values(Routes).includes(value as RouteValue);
 }
 
 export class Router {
@@ -17,50 +17,36 @@ export class Router {
     constructor() {
         this.routes = {};
         this.currentState = { route: Routes.OPTIONS_LIST };
-
-        // Set initial route
         this.setInitialRoute();
-
-        // Listen for hash changes
         window.addEventListener('hashchange', this.handleHashChange);
     }
 
-
-    public addRoute(route: string, callback: () => void): this {
-        if (isRouteValue(route)) {
-            this.routes[route] = callback;
-        }
+    public addRoute(route: RouteValue, callback: () => void): this {
+        this.routes[route] = callback;
         return this;
     }
-
 
     public setNotFoundCallback(callback: () => void): this {
         this.notFoundCallback = callback;
         return this;
     }
 
-
-    public navigate(route: string): void {
+    public navigate(route: RouteValue): void {
         if (route === this.currentState.route) {
-            return; // Предотвращаем навигацию к текущему маршруту
+            return;
         }
-
         window.location.hash = `#${route}`;
-
     }
 
-
-    public getCurrentRoute(): string {
+    public getCurrentRoute(): RouteValue {
         return this.currentState.route;
     }
-
 
     private setInitialRoute(): void {
         const hash = window.location.hash.slice(1);
         if (hash && isRouteValue(hash)) {
             this.currentState = { route: hash };
         } else {
-            // Set default route if no hash or invalid route
             window.location.hash = `#${Routes.OPTIONS_LIST}`;
             this.currentState = { route: Routes.OPTIONS_LIST };
         }
@@ -96,7 +82,6 @@ export class Router {
             this.currentState = { route: Routes.ERROR };
         }
     }
-
 
     private handleHashChange = (): void => {
         if (this.isHandlingRoute) {

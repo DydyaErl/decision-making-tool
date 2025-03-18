@@ -5,22 +5,23 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
+  base: '/decision-making-tool/',
   server: {
     open: false,
     hmr: {
-      overlay: true
-    }
+      overlay: true,
+    },
   },
   build: {
     outDir: 'dist',
     minify: true,
   },
-  // Явно указываем точку входа
+
   root: './',
   publicDir: 'public',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src')
-    }
-  }
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
 });

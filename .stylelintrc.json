@@ -1,0 +1,9 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-clean-order"],
+  "rules": {
+    "color-function-notation": "legacy",
+    "selector-class-pattern": null,
+    "no-descending-specificity": null,
+    "declaration-empty-line-before": null
+  }
+}

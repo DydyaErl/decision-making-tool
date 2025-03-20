@@ -97,7 +97,9 @@ export class OptionsControl implements Component {
       },
       listeners: {
         click: (): void => {
+          console.log('Paste button clicked');
           const modal = createPasteListModal(this.onOptionsImport);
+          console.log('Modal created:', modal);
           modal.showModal();
         },
       },

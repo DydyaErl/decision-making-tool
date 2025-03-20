@@ -45,9 +45,15 @@ export class Router {
     const hash = window.location.hash.slice(1);
     if (hash && isRouteValue(hash)) {
       this.currentState = { route: hash };
+      setTimeout(() => {
+        this.executeRouteCallback(hash);
+      }, 0);
     } else {
       window.location.hash = `#${Routes.OPTIONS_LIST}`;
       this.currentState = { route: Routes.OPTIONS_LIST };
+      setTimeout(() => {
+        this.executeRouteCallback(Routes.OPTIONS_LIST);
+      }, 0);
     }
   }
 

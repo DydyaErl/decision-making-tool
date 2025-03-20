@@ -192,13 +192,10 @@ export class OptionsList implements Component {
       return;
     }
 
-    this.options = [
-      ...this.options,
-      ...newOptions.map((option) => ({
-        ...option,
-        id: this.generateId(),
-      })),
-    ];
+    this.options = newOptions.map((option) => ({
+      ...option,
+      id: this.generateId(),
+    }));
 
     this.saveOptions();
     this.renderOptionsList();

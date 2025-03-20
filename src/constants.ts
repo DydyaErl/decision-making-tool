@@ -4,6 +4,7 @@ export const DEFAULT_DURATION = 10;
 export const MIN_DURATION = 5;
 export const MIN_VALID_OPTIONS = 2;
 export const WHEEL_FULL_ROTATIONS = 5;
+export const MAX_DURATION = 30;
 
 export enum Routes {
   OPTIONS_LIST = 'options-list',

@@ -87,13 +87,15 @@ export function createPasteListModal(
 ): HTMLDialogElement {
   const dialog = createElement({
     tagName: 'dialog',
-    className: 'modal paste-list-modal',
+    className: 'modal-paste-list',
   });
-
+  dialog.classList.add('modal');
   dialog.append(createPasteListModalContent(dialog, onConfirm));
   setupModalEventListeners(dialog);
   document.body.append(dialog);
 
+  console.log('Dialog created:', dialog);
+  document.body.append(dialog);
   return dialog;
 }
 
@@ -135,9 +137,9 @@ function createValidOptionsModalContent(
 export function createAddValidOptionsModal(): HTMLDialogElement {
   const dialog = createElement({
     tagName: 'dialog',
-    className: 'modal add-valid-options-modal',
+    className: 'modal-add-valid-options',
   });
-
+  dialog.classList.add('modal');
   dialog.append(createValidOptionsModalContent(dialog));
   setupModalEventListeners(dialog);
   document.body.append(dialog);

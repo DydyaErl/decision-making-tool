@@ -71,6 +71,10 @@ export class Wheel {
     return `hsl(${hue}, 70%, 60%)`;
   }
 
+  public updateSoundSetting(soundEnabled: boolean): void {
+    this.soundEnabled = soundEnabled;
+  }
+
   public spin(durationSeconds: number): void {
     if (this.state === WheelState.PICKING || !this.wheelCanvas) {
       return;
